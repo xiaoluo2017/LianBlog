@@ -37,9 +37,9 @@ const common = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!sass-loader?sourceMap')
       },
-      { 
-        test: /\.(png|jpg)$/, 
-        loader: 'file-loader',
+      { test: /\.(jpe?g|png)$/, 
+        loader: 'url', 
+        query: {limit: 10240},
         include: PATHS.app
       },
       { 

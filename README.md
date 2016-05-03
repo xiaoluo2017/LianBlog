@@ -2,9 +2,9 @@
 
 #### Web Front-End Engineer
 
-Tech: React-Redux
+Tech: React-Redux, es2015, contentful(CMS)
 
-Tools: SCSS, Webpack
+Tools: SCSS, Webpack, Babel
 
 ### About Permission
 

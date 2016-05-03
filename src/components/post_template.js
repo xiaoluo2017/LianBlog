@@ -53,7 +53,7 @@ export default class PostBase extends Component {
 				</div>
 
 				<time dateTime={fields.date}>
-					{timeUtil(fields.date)}
+					<a>{timeUtil(fields.date)}</a>
 				</time>
 
 				<div className="tag-panel">
