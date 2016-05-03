@@ -1,0 +1,58 @@
+footer {
+	position: relative;
+	background: $clr-footer;
+    padding: 20px 0;
+    min-height: 280px;
+    text-align: center;
+    color: $clr-primary;
+
+	small {
+		padding-top: 50px;
+		display: block;
+		color: $clr-def-lighter;
+		font-size: .85rem;
+		line-height: 1.8rem;
+	}
+
+	.sub-footer {
+		position: absolute;
+		bottom: 0;
+		height: 130px;
+		width: 100%;
+	    background-image: -webkit-linear-gradient(#2b323b 0%, #2b323b 45%, #343c47 45%, #343c47 78%, #3d4652 78%, #3d4652 100%);
+	    background-image: -o-linear-gradient(#2b323b 0%, #2b323b 45%, #343c47 45%, #343c47 78%, #3d4652 78%, #3d4652 100%);
+	    background-image: linear-gradient(#2b323b 0%, #2b323b 45%, #343c47 45%, #343c47 78%, #3d4652 78%, #3d4652 100%);
+	}
+
+	.banner {
+		background: $clr-contrast;
+	    width: 44px;
+	    height: 80px;
+	    position: relative;
+	    display: block;
+	    margin: 0 auto;
+
+	    &:before {
+	    	width: 30px;
+		    height: 30px;
+		    content: "";
+		    position: absolute;
+		    display: table;
+		    left: 9px;
+		    top: 15px;
+		    background: url('../img/avatar.png') -2px 0px / contain no-repeat;
+	    }
+
+	    &:after {
+	    	content: "";
+		    position: absolute;
+		    display: table;
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 0 22px 14px;
+		    border-color: transparent transparent $clr-banner transparent;
+		    bottom: 0;
+	    }
+	}
+}

@@ -1,0 +1,35 @@
+$avatar-r: 140px;
+
+#avatar {
+    width: $avatar-r;
+    height: $avatar-r;
+    background-color: $clr-contrast;
+
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+         -o-border-radius: 50%;
+            border-radius: 50%;
+
+    &:before {
+        width: $avatar-r;
+        height: $avatar-r;
+        content: "";
+        position: absolute;
+        display: table;
+        background: url('../img/avatar.png') 0px 1px / contain no-repeat;
+    }
+}
+
+.circle-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $clr-contrast;
+    padding: 18px;
+    opacity: 0.8;
+    
+    &:hover {
+        opacity: 0.6;
+    }
+}

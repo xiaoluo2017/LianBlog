@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.section {
+    background-color: $clr-primary;
+    color: $clr-dark;
+    padding: 50px;
+    transition: 0.5s;
+
+    &.initing {
+        display: none;
+    }
+
+    &.leaving {
+        background-color: $clr-contrast;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.clearboth {
+    clear: both;
+}

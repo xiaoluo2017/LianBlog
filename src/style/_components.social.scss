@@ -1,0 +1,44 @@
+#contact-panel {
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $clr-def-lighter;
+}
+
+.social-share-element {
+    width: 40px;
+    height: 40px;
+    background-color: $clr-link;
+    background-image: url('../img/social.png');
+    transition: 0.5s;
+    display: inline-block;
+    margin-right: 5px;
+    border-bottom: none;
+    border-radius: 20px;
+
+    
+    &:hover {
+        background-color: $clr-contrast;
+        border-radius: 5px;
+    }
+    
+    &.social-facebook {
+        background-position: -40px 0;
+    }
+
+    &.social-codepen {
+        background-position: 0 0;
+    }
+
+    &.social-twitter {
+        background-position: -160px 0;
+    }
+
+    &.social-github {
+        background-position: -80px 0px;
+    }
+    
+    &.social-linkedin {
+        background-position: -120px 0;
+    }
+}

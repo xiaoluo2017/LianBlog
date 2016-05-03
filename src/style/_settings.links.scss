@@ -1,0 +1,22 @@
+a {
+    color: $clr-link;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $clr-contrast-lighter;
+    }
+    
+    &.highlight {
+        color: $clr-contrast;
+        
+        &:hover {
+            background-color: $clr-contrast-lighter;
+        }
+    }
+}
+
+.circle-img:hover {
+        background-color: $clr-contrast;
+}
