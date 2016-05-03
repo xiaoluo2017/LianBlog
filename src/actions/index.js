@@ -10,7 +10,10 @@ const client = Contentful.createClient({
 });
 
 export function fetchPosts() {
-	const request = client.getEntries({ content_type: '2wKn6yEnZewu2SCCkus4as' });
+	const request = client.getEntries({ 
+		content_type: '2wKn6yEnZewu2SCCkus4as',
+		order: 'fields.date' 
+	});
 
 	return (
 		{
