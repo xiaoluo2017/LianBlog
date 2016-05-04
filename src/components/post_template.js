@@ -31,10 +31,10 @@ export default class PostBase extends Component {
 
 	renderText(text, hasPost) {
 		if(hasPost) {
-			return <Text text={makeTextBody(text)} />
+			return <Text text={makeTextBody(text)} hasPost={hasPost} />
 		} 
 
-		return <Text text={makeAbstract(text)} />
+		return <Text text={makeAbstract(text)} hasPost={hasPost} />
 	}
 
 	render() {
@@ -60,7 +60,7 @@ export default class PostBase extends Component {
 					{this.renderTags(fields.tags)}
 				</div>
 
-				<div className="post-body">{
+				<div>{
 					this.renderText(fields.body, hasPost)
 				}</div>
 			</article>
