@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 
 import Tag from './tag';
 import Text from './markdown_text';
+import Loader from './loader';
 
 import timeUtil from '../util/time_util';
 import { findPost } from '../actions/index';
@@ -39,7 +40,7 @@ export default class PostBase extends Component {
 
 	render() {
 		if(!this.props.post.post) {
-			return <div></div>;
+			return <Loader />;
 		}
 		const { fields, sys } = this.props.post.post;
 		const hasPost = this.props.post.hasPost;
