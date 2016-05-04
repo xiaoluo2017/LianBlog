@@ -45,7 +45,7 @@ export default class PostBase extends Component {
 		const hasPost = this.props.post.hasPost;
 
 		return (
-			<div className="post-content">
+			<article className="post-content">
 				<div className="post-title">
 					<h2 id="title">
 						{fields.title}
@@ -63,7 +63,7 @@ export default class PostBase extends Component {
 				<div className="post-body">{
 					this.renderText(fields.body, hasPost)
 				}</div>
-			</div>
+			</article>
 		);
 	}
 }

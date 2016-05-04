@@ -33,7 +33,8 @@ class PostPage extends Component {
 function mapStateToProps(state) {
 	return {
 		post: state.posts.post,
-		hasPost: true
+		hasPost: true,
+		//id: state.posts.id
 	};
 }
 
