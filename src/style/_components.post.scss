@@ -29,6 +29,24 @@
                 margin: 18px 12px 0 0;
             }
         }
+
+        ul {
+            padding-left: 1em;
+            font-size: 1em;
+
+            li:not(:last-child) {
+                margin-bottom: 0.5em;
+            }
+
+            ul {
+                padding-left: 2em;
+                font-size: 0.8;
+
+                li:first-child {
+                    margin-top: 0.5em;
+                }
+            }
+        }
     }
 
     .post-abstract {
