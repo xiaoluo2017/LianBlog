@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
+import Title from './post_title';
 import Tag from './tag';
 import Text from './markdown_text';
 import Loader from './loader';
@@ -47,11 +48,7 @@ export default class PostBase extends Component {
 
 		return (
 			<article className="post-content">
-				<div className="post-title">
-					<h2 id="title">
-						{fields.title}
-					</h2>
-				</div>
+				<Title post={this.props.post.post} hasPost={hasPost}/>
 
 				<time dateTime={fields.date}>
 					<a>{timeUtil(fields.date)}</a>

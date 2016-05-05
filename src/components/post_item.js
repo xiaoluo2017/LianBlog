@@ -19,13 +19,14 @@ export default class Post extends Component {
 
 		const post_data = {
 			post,
-			hasPost
+			hasPost,
+			id
 		}
 
 		return (
 			<div className="row post-container">
 				{/* a back button if in post page*/}
-				<PostBase post={post_data} />
+				<PostBase post={post_data}/>
 				<div className="post-action">
 					<Link to={`posts/${id}`} >Read More</Link>
 				</div>
