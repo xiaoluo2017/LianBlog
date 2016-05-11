@@ -3,6 +3,10 @@ a {
     text-decoration: none;
     transition: 0.5s;
     cursor: pointer;
+
+    span {
+        cursor: pointer;
+    }
     
     &:hover {
         background-color: $clr-contrast-lighter;

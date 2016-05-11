@@ -2,9 +2,9 @@
 
 #### Web Front-End Engineer
 
-Tech: React-Redux, es2015, contentful(CMS)
+Tech: React-Redux, es2015
 
-Tools: SCSS, Webpack, Babel
+Tools: SCSS, Webpack, Babel, contentful(CMS)
 
 ### About Permission
 
@@ -17,9 +17,10 @@ The project is open-sourced under MIT license.
 There are two methods for getting started with this repo.
 
 ####Familiar with Git?#####
-Checkout this repo, install depdencies, then start the gulp process with the following:
+Checkout this repo, install depdencies, then start the webpack process with the following:
 
-```
+``` 
+	> mkdir Blog
 	> git clone https://github.com/lianliu/LianBlog.git Blog
 	> cd Blog
 	> npm install

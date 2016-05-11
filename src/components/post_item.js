@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 //import { sendPostId } from '../actions/index';
 
 import PostBase from './post_template';
+import ReadMore from './read_more';
 
 export default class Post extends Component {
 	constructor(props) {
@@ -27,9 +28,7 @@ export default class Post extends Component {
 			<div className="row post-container">
 				{/* a back button if in post page*/}
 				<PostBase post={post_data}/>
-				<div className="post-action">
-					<Link to={`posts/${id}`} >Read More</Link>
-				</div>
+				<ReadMore id={id} />
 			</div>
 		);
 	}
