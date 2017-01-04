@@ -5,7 +5,7 @@ export default () => {
 		<div className="section center">
 			<div id="avatar" style={{marginLeft: 'auto', marginRight:'auto'}} />
 			<h2 id="title">Lian Liu</h2>
-            <p>Email: <a href="mailto:lian.liu@vanderbilt.edu" target="_blank">lian.liu@vanderbilt.edu</a></p>
+            <p>Email: <a href="mailto:lliu@atypon.com" target="_blank">lliu@atypon.com</a></p>
             <div id="contact-panel">
                 <a className="social-share-element social-facebook" href="https://www.facebook.com/lian.liu.58910" target="_blank" title="Follow me on Facebook"></a>
                 <a className="social-share-element social-codepen" href="http://codepen.io/lianliu/" target="_blank" title="Follow me on Codepen"></a>
