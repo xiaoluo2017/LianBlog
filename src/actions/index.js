@@ -7,13 +7,13 @@ export const FIND_POST = 'FIND_POST';
 //export const STORE_POST_ID = 'STORE_POST_ID';
 
 const client = Contentful.createClient({
-	space: '8ea9mgwdua70',
-  	accessToken: '10fc3f9ba91a3c210c12d2dcdf581ed90818eae7ecbbf5406682f83cb29c1229'
+	space: '*',
+  	accessToken: '*'
 });
 
 export function fetchPosts() {
 	const request = client.getEntries({ 
-		content_type: '2wKn6yEnZewu2SCCkus4as',
+		content_type: '*',
 		order: 'fields.date' 
 	});
 
