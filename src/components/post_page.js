@@ -5,6 +5,7 @@ import { findPost } from '../actions/index';
 
 import PostBase from './post_template';
 import Button from './button';
+import CommentComponent from 'react-disqus-thread';
 
 class PostPage extends Component {
 	constructor(props) {
@@ -24,6 +25,9 @@ class PostPage extends Component {
 				<div className="row post-container" style={{marginBottom: 30 + 'px' }}>
 					<Button dest='/' />
 					<PostBase post={post_data} />
+					<CommentComponent className="CommentComponent"
+						shortname="lian22"
+					/>
 				</div>
 			</div>
 		);

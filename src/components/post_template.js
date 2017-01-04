@@ -26,6 +26,8 @@ function makeTextBody(text) {
 
 export default class PostBase extends Component {
 	renderTags(tags) {
+		if(!tags) return;
+		
 		return tags.map(tag => {
 			return <Tag tag={tag} key={tag}/>;
 		});

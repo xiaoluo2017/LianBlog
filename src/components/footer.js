@@ -11,8 +11,8 @@ export default () => {
 
 			<div className="row">
 				<small className="content">
-					© Lian Liu 2016 - Nashville, TN -
-					Email: <a href="mailto:lian.liu@vanderbilt.edu" target="_blank">lian.liu@vanderbilt.edu</a>
+					© Lian Liu {new Date().getFullYear()} - Oakland, CA -
+					Email: <a href="mailto:lliu@atypon.com" target="_blank">lliu@atypon.com</a>
 				</small>
 			</div>
 
