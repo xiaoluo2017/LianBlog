@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import CodeBlock from './codeBlock';
+
 export default (props) => {
 	if(props.hasPost) {
 		return(
 			<div className="post-body">
-				<ReactMarkdown source={props.text} />
+				<ReactMarkdown 	
+					source={props.text} 
+					renderers={{CodeBlock}} 
+				/>
 			</div>
 		);
 	} else {
