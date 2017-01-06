@@ -14,7 +14,11 @@ const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <Router history={appHistory} routes={ routes } />
+    <Router 
+    	onUpdate={() => window.scrollTo(0, 0)} 
+    	history={appHistory} 
+    	routes={ routes } 
+    />
   </Provider>
   , document.querySelector('.container')
 );
