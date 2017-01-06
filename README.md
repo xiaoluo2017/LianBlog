@@ -2,9 +2,9 @@
 
 #### Web Front-End Engineer
 
-Tech: React-Redux, es2015
+Tech: React-Redux, ES2015
 
-Tools: SCSS, Webpack, Babel, contentful(CMS)
+Tools: SCSS, Webpack, Babel, contentful(CMS), Disqus(comment service)
 
 ### About Permission
 
@@ -26,6 +26,8 @@ Checkout this repo, install depdencies, then start the webpack process with the 
 	> npm install
 	> npm start
 ```
+
+**You need to register your own account of Disqus and contentful services before using as your own blog.**
 
 ####Not Familiar with Git?#####
 Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
