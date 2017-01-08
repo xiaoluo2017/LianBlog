@@ -25,8 +25,10 @@ class PostPage extends Component {
 				<div className="row post-container" style={{marginBottom: 30 + 'px' }}>
 					<Button dest='/' />
 					<PostBase post={post_data} />
-					<CommentComponent className="CommentComponent"
+					<CommentComponent 
+						className="CommentComponent"
 						shortname="lian22"
+                		identifier={this.props.params.id}
 					/>
 				</div>
 			</div>
