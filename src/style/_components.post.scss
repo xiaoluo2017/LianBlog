@@ -63,6 +63,24 @@
     }
 }
 
+blockquote {
+    font-size: 2em;
+    line-height: 1.8;
+    background: $clr-blockquote;
+    border-left: 10px solid $clr-contrast;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+
+    &:before {
+      color: $clr-contrast;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+}
+
 @media (max-width: 767px) {
 	.post-container {
         max-width: 95%;
