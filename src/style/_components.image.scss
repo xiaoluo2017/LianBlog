@@ -4,6 +4,7 @@ $avatar-r: 140px;
     width: $avatar-r;
     height: $avatar-r;
     background-color: $clr-contrast;
+    cursor: pointer;
 
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
@@ -17,6 +18,11 @@ $avatar-r: 140px;
         position: absolute;
         display: table;
         background: url('../img/avatar.png') 0px 1px / contain no-repeat;
+    }
+
+    &:hover {
+        transform: rotateY(360deg);
+        transition: transform 0.8s ease-in-out;
     }
 }
 
