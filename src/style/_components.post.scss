@@ -20,13 +20,14 @@
     .post-body {
         & div > p {
             font-weight: 100;
-            line-height: 2.3rem;
+            line-height: 2.3;
+            margin-top: 2em;
 
             &:first-child:first-letter {
                 float: left; 
                 color: $clr-dropcap; 
                 font-size: 3.7em; 
-                margin: 18px 12px 0 0;
+                margin: -60px 0 0 0;
             }
         }
 
