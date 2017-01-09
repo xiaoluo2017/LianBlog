@@ -19,6 +19,7 @@
 
     .post-body {
         & div > p {
+            position: relative;
             font-weight: 100;
             line-height: 2.3;
             margin-top: 2em;
@@ -65,20 +66,33 @@
 }
 
 blockquote {
+    position: relative;
+    font-family: 'Cantata One', serif;
     font-size: 2em;
     line-height: 1.8;
-    background: $clr-blockquote;
-    border-left: 10px solid $clr-contrast;
     margin: 1.5em 10px;
     padding: 0.5em 10px;
 
+    &:before,
+    &:after {
+        font-style: normal;
+        font-size: 4em;
+        line-height: 1;
+        color: $clr-contrast;
+    
+        position: absolute;
+    }
+
     &:before {
-      color: $clr-contrast;
-      content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
+        content: '“';
+        top: -0.125em;
+        left: -0.5em;
+    }
+
+    &:after {
+        content: '”';
+        right: -0.5em;
+        bottom: -0.125em;
     }
 }
 
